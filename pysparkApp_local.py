@@ -39,7 +39,7 @@ def timer(title):
 with timer('Total Apps time'):
     spark = SparkSession.builder\
             .master("local[*]")\
-            .appName('P8_PySpark')\
+            .appName('P8 - Déployez un modèle dans le cloud')\
             .getOrCreate()
     sc = spark.sparkContext
     sc.setLogLevel("OFF")

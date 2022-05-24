@@ -61,7 +61,7 @@ with timer('Total Apps time'):
 
     spark = (SparkSession
             .builder.master('local[*]')
-            .appName('P8')
+            .appName('P8 - Déployez un modèle dans le cloud')
             .config('spark.hadoop.fs.s3a.access.key', accessKeyId)
             .config('spark.hadoop.fs.s3a.secret.key', secretAccessKey) 
             .config('spark.hadoop.fs.s3a.impl', 'org.apache.hadoop.fs.s3a.S3AFileSystem') 
