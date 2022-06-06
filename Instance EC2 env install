@@ -7,7 +7,8 @@ sudo apt update
 #Java
 sudo apt install openjdk-8-jre-headless
 
-#Anaconda
+
+#If the instance does not have python install -> Anaconda
 '''sudo apt install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
 wget -P /tmp https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
 sha256sum /tmp/Anaconda3-2020.02-Linux-x86_64.sh
@@ -34,11 +35,11 @@ aws configure
 
 sudo apt install python3-pip
 
-pip install pandas tensorflow pillow findspark pyarrow boto3 fsspec s3fs
+pip install pandas tensorflow pillow findspark pyarrow boto3 fsspec s3fs seaborn
 
 # Install SWAP taille swap 2x RAM 
 https://shurn.me/blog/2017-02-13/swap-space-in-ec2-ubuntu
 
 # Send file to EC2
-scp -i "EC2_P8_pyspark.pem" /Users/franck/Documents/P8_deployez_modele_cloud/pysparkApp_cloud.py ubuntu@ec2-3-250-200-52.eu-west-1.compute.amazonaws.com:~
+scp -i "EC2_P8_pyspark.pem" /Users/franck/Documents/P8_deployez_modele_cloud/pysparkApp_cloud.py ubuntu@ec2-54-173-139-254.compute-1.amazonaws.com:~
 
